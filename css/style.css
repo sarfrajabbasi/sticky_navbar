@@ -47,6 +47,12 @@ body{
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.navbar a:hover{
+.navbar a:hover,.navbar.active a:hover{
     color: red;
+}
+.active{
+    background-color: black;
+}
+.navbar.active a{
+    color: white;
 }
