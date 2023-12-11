@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+.top-container{
+    background-image: url("https://source.unsplash.com/random/?computer");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+/* nav bar */
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none ;
+}
+.navbar  a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar a:hover{
+    color: red;
+}
