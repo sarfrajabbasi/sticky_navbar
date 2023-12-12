@@ -1,59 +1,106 @@
-body{
-    margin: 0;
-}
-.top-container{
-    background-image: url("https://source.unsplash.com/random/?computer");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+body {
+  margin: 0;
 }
 
-.top-container h1{
-    color: #fff;
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 2px;
+.top-container {
+  background-image: url("https://source.unsplash.com/random/?computer");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.text{
-    margin: 50px 5%;
-    font-family: sans-serif;
+.top-container h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+}
+
+.text {
+  margin: 50px 5%;
+  font-family: sans-serif;
 }
 
 /* nav bar */
 
-.navbar{
-    display: flex;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: background-color 0.4s;
+.navbar {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
 
+.navbar ul {
+  display: flex;
+  list-style-type: none;
 }
-.navbar ul{
-    display: flex;
-    list-style-type: none ;
+.navbar a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.navbar  a{
-    text-decoration: none;
-    margin: 0 10px;
-    color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.navbar a:hover,
+.navbar.active a:hover {
+  color: red;
 }
-.navbar a:hover,.navbar.active a:hover{
-    color: red;
+.active {
+  background-color: black;
 }
-.active{
-    background-color: black;
+.navbar.active a {
+  color: white;
 }
-.navbar.active a{
-    color: white;
+
+/* Responsive Styles */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .top-container h1 {
+    font-size: 40px;
+  }
+
+  .text {
+    margin: 30px 5%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .top-container h1 {
+    font-size: 30px;
+  }
+
+  .text {
+    margin: 20px 5%;
+  }
+  .navbar li {
+    margin: 10px 0;
+    padding: 10px;
+    /* border: 1px solid red; */
+  }
+  .navbar li:hover{
+    border: 1px solid red;
+  }
 }
